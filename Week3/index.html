@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VerdantLife | Grow Greener, Live Better</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader">
+<div class="leaf"></div>
+<h2>VerdantLife</h2>
+</div>
+<button id="scrollTop">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+<header>
+<nav class="navbar">
+<div class="logo">
+<i class="fa-solid fa-seedling"></i>
+<span>VerdantLife</span>
+</div>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#plants">Plants</a></li>
+<li><a href="#facts">Nature Facts</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<div class="nav-buttons">
+<button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+<button id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+</div>
+</nav>
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Reconnect With Nature</h1>
+<p>Discover beautiful greenery, sustainable living habits, wellness tips and simple actions that make our planet healthier.</p>
+<div class="hero-buttons">
+<button class="primary-btn">Explore More</button>
+<button class="secondary-btn">Watch Story</button>
+</div>
+<div class="hero-stats">
+<div class="stat-card">
+<h2 id="treeCounter">0</h2>
+<p>Trees Planted</p>
+</div>
+<div class="stat-card">
+<h2 id="userCounter">0</h2>
+<p>Community Members</p>
+</div>
+<div class="stat-card">
+<h2 id="tipsCounter">0</h2>
+<p>Eco Tips Shared</p>
+</div>
+</div>
+</div>
+<div class="hero-image">
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Forest Landscape">
+</div>
+</section>
+</header>
+<main>
+<section class="about reveal" id="about">
+<div class="section-title">
+<h2>About VerdantLife</h2>
+<p>VerdantLife is an interactive platform encouraging sustainable living through engaging visuals, practical eco habits and JavaScript-powered experiences.</p>
+</div>
+<div class="about-grid">
+<div class="about-card">
+<i class="fa-solid fa-leaf"></i>
+<h3>Eco Friendly</h3>
+<p>Learn easy ways to reduce waste and build environmentally responsible daily habits.</p>
+</div>
+<div class="about-card">
+<i class="fa-solid fa-tree"></i>
+<h3>Green Planet</h3>
+<p>Understand biodiversity and why forests play an essential role in protecting life.</p>
+</div>
+<div class="about-card">
+<i class="fa-solid fa-water"></i>
+<h3>Water Conservation</h3>
+<p>Discover practical methods to save water at home without compromising comfort.</p>
+</div>
+</div>
+</section>
+<section class="plants reveal" id="plants">
+<div class="section-title">
+<h2>Featured Plants</h2>
+<p>Indoor plants that improve air quality while making every home healthier and more beautiful.</p>
+</div>
+<div class="plant-container">
+<div class="plant-card">
+<img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=600&q=80" alt="Peace Lily">
+<h3>Peace Lily</h3>
+<p>A natural air purifier that thrives indoors with minimal maintenance.</p>
+<button class="learnBtn">Learn More</button>
+</div>
+<div class="plant-card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80" alt="Snake Plant">
+<h3>Snake Plant</h3>
+<p>Perfect for beginners because it requires very little watering and care.</p>
+<button class="learnBtn">Learn More</button>
+</div>
+<div class="plant-card">
+<img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=600&q=80" alt="Monstera">
+<h3>Monstera</h3>
+<p>Known for its iconic split leaves and refreshing tropical appearance.</p>
+<button class="learnBtn">Learn More</button>
+</div>
+</div>
+</section>
+<section class="facts reveal" id="facts">
+<div class="section-title">
+<h2>Nature Facts</h2>
+<p>Click the button below to discover interesting facts about our environment.</p>
+</div>
+<div class="fact-card">
+<i class="fa-solid fa-earth-americas"></i>
+<h3>Did You Know?</h3>
+<p id="factText">Forests cover nearly one-third of Earth's land area.</p>
+<button id="factBtn">Generate New Fact</button>
+</div>
+</section>
+
+<section class="quote-section reveal">
+<div class="section-title">
+<h2>Quote of the Moment</h2>
+<p>Stay inspired to care for nature every single day.</p>
+</div>
+<div class="quote-card">
+<i class="fa-solid fa-quote-left"></i>
+<p id="quoteText">The Earth is what we all have in common.</p>
+<h4 id="quoteAuthor">— Wendell Berry</h4>
+<button id="quoteBtn">New Quote</button>
+</div>
+</section>
+
+<section class="challenge reveal">
+<div class="section-title">
+<h2>Daily Eco Challenge</h2>
+<p>Complete one small action today and make a difference.</p>
+</div>
+<div class="challenge-card">
+<i class="fa-solid fa-seedling"></i>
+<h3 id="challengeTitle">Carry a reusable water bottle.</h3>
+<p id="challengeDesc">Avoid single-use plastic bottles for an entire day.</p>
+<button id="challengeBtn">Next Challenge</button>
+</div>
+</section>
+
+<section class="gallery reveal" id="gallery">
+<div class="section-title">
+<h2>Nature Gallery</h2>
+<p>Explore beautiful moments from nature around the world.</p>
+</div>
+<div class="gallery-container">
+<div class="main-image">
+<img id="galleryImage" src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=1200&q=80" alt="Nature">
+</div>
+<div class="gallery-thumbnails">
+<img class="thumb active" src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?auto=format&fit=crop&w=400&q=80" alt="Forest">
+<img class="thumb" src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=400&q=80" alt="Leaves">
+<img class="thumb" src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=400&q=80" alt="Flowers">
+<img class="thumb" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Plant">
+</div>
+</div>
+</section>
+
+<section class="progress reveal">
+<div class="section-title">
+<h2>Environmental Progress</h2>
+<p>Small habits collectively create a greener future.</p>
+</div>
+<div class="progress-wrapper">
+<div class="progress-item">
+<div class="progress-header">
+<span>Tree Plantation</span>
+<span>90%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill tree-fill"></div>
+</div>
+</div>
+<div class="progress-item">
+<div class="progress-header">
+<span>Water Conservation</span>
+<span>75%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill water-fill"></div>
+</div>
+</div>
+<div class="progress-item">
+<div class="progress-header">
+<span>Plastic Reduction</span>
+<span>82%</span>
+</div>
+<div class="progress-bar">
+<div class="progress-fill plastic-fill"></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="newsletter reveal">
+<div class="newsletter-card">
+<h2>Join Our Green Community</h2>
+<p>Receive weekly sustainability tips directly in your inbox.</p>
+<form id="newsletterForm">
+<input type="email" id="newsletterEmail" placeholder="Enter your email">
+<button type="submit">Subscribe</button>
+</form>
+<p id="newsletterMessage"></p>
+</div>
+</section>
+
+<section class="contact reveal" id="contact">
+<div class="section-title">
+<h2>Contact Us</h2>
+<p>Have a question or suggestion? We'd love to hear from you.</p>
+</div>
+<form id="contactForm">
+<div class="input-group">
+<input type="text" id="name" placeholder="Full Name">
+</div>
+<div class="input-group">
+<input type="email" id="email" placeholder="Email Address">
+</div>
+<div class="input-group">
+<textarea id="message" rows="6" placeholder="Your Message"></textarea>
+</div>
+<button type="submit">Send Message</button>
+<p id="formMessage"></p>
+</form>
+</section>
+<footer>
+<div class="footer-content">
+<h2>VerdantLife</h2>
+<p>Growing awareness, inspiring sustainability and creating a greener tomorrow through interactive web experiences.</p>
+<div class="social-icons">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+</div>
+<p class="copyright">© 2026 VerdantLife. Designed with ❤️ for nature enthusiasts.</p>
+</div>
+</footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
